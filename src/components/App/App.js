@@ -30,7 +30,7 @@ class App extends PureComponent {
                      console.log('photos', photos);
      
                      const photoComponents = photos.data.hits.map((hit, ind) => {
-                        return <Photo key={ ind } data={ hit }  />
+                        return <Photo key={ ind } data={ hit }  />;
                      });
      
                      this.setState({
