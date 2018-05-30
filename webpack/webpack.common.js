@@ -1,3 +1,5 @@
+require('dotenv').config;
+
 const webpack = require('webpack');
 
 module.exports = {
@@ -29,6 +31,11 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.json']
     },
+    plugins: [
+        new webpack.DefinePlugin({
+            'PIXABAY_API_KEY': JSON.stringify(process.env.PIXABAY_API_KEY)
+        })
+    ],
     node: {
         fs: 'empty',
         tls: 'empty',
