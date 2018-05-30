@@ -4,7 +4,7 @@ class Photo extends PureComponent {
     render() {
         return (
             <div className='photo'>
-                <h1>Photo</h1>
+                <img src={ `${this.props.data.previewURL}` } />
             </div>
         );
     }
