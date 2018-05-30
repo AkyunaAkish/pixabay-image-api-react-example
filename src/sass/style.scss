@@ -1,0 +1,7 @@
+// Import variables first so all components below can reference scss variables
+@import './variables';
+
+// Global Styles
+@import './global';
+
+@import './components/App/App';
